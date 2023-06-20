@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Quicksand', Courier, monospace;
+    margin: 0px;
+
+}
+
+.header{
+    height: 10%;
+    padding-bottom: 0.5em;
+    padding-top: 0.9em;
+    padding-left: 0.5em;
+    background-color: rgb(209, 209, 209);
+    display: flex;
+    flex-direction: row;
+}
+.icon-bars{
+    margin: 5px;
+    color: rgb(61, 61, 61);
+}
+
+.icon-bars:hover{
+    color: yellow;
+    transition: 0.2s;
+}
+
+.menu{
+    font-size: 1em;
+}
+
+.apresentacao{
+    margin-top: 30vh;
+    text-align: center;
+    text-shadow: -3px 2px 5px rgba(0, 0, 0, 0.39);
+}
+
+.botao-inicial{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 30vw;
+    padding: 20px;
+}
+
+
+button {
+    height: 36px;
+    text-align: center;
+    min-height: 90px;
+    font-weight: bolder;
+}
+
+.btn{
+    font-weight: bold;
+    background-color: gray;
+    border-color: #91919123;
+    color: rgb(49, 49, 49);
+}
+
+button:hover{
+    box-shadow: 2px 2px 100px yellow;
+}
+button:focus {
+    border-color: #000000;
+    outline: none;
+    background-color: rgb(255, 196, 0);
+    color: black;
+}
+
+table{
+    border-collapse: collapse;
+    line-height: 200%;
+    text-align: center;
+}
+th{
+    background-color: rgba(202, 200, 200, 0.418);
+    column-width: 100vh;
+    
+    
+}
+
+.exit{
+    margin-left: 95%;
+}
+
