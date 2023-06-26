@@ -8,7 +8,7 @@
     <title>Lucros</title>
 </head>
 <body>
-    <div class="header">
+    <header>
         <a href="#"><i class="fa-solid fa-bars icon-bars"></i></a>
             
             <div class="menu">
@@ -16,32 +16,41 @@
             </div>
         
             <a href="../PAGES/index.html" class="exit"><i class="fa-regular fa-circle-xmark" style="color: #6b6b6b;"></i></a>
-    </div>
-        <table>
-           <thead>
-            <tr>
-                <th>ITEM</th>
-                <th>VALOR MÊS</th>
-                <th>INFO</th>
-            </tr>
-           </thead>
-           <tbody>
-            <tr>
-                <td class="item" id="item-1">Serviço cartão</td>
-                <td class="valor-mes" id="valor-1">R$ 10,00</td>
-                <td class="icon"><i class="fa-solid fa-circle-info" style="color: #c4c4c4;"></i></td>
-            </tr>
-            <tr>
-                <td class="item" id="item-2">Lis conta</td>
-                <td class="valor-mes" id="valor-2">R$ 3,50</td>
-                <td class="icon"><i class="fa-solid fa-circle-info" style="color: #c4c4c4;"></i></td>
-            </tr>
-            <tr>
-                <td class="item" id="item-2">Cesta produtos</td>
-                <td class="valor-mes" id="valor-2">R$ 10,00</td>
-                <td class="icon"><i class="fa-solid fa-circle-info" style="color: #c4c4c4;"></i></td>
-            </tr>
-           </tbody>
-        </table>
+        </header>
+        <section class="container">
+            <table>
+               <thead>
+                <tr>
+                    <th>ITEM</th>
+                    <th>VALOR MÊS</th>
+                    <th>INFO</th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                    <td class="item" id="item-1">Serviço cartão</td>
+                    <td class="valor-mes" id="valor-1">R$ 10,00</td>
+                    <td class="icon"><i class="fa-solid fa-circle-info" style="color: #c4c4c4;"></i></td>
+                </tr>
+                <tr>
+                    <td class="item" id="item-2">Lis conta</td>
+                    <td class="valor-mes" id="valor-2">R$ 3,50</td>
+                    <td class="icon"><i class="fa-solid fa-circle-info" style="color: #c4c4c4;"></i></td>
+                </tr>
+                <tr>
+                    <td class="item" id="item-2">Cesta produtos</td>
+                    <td class="valor-mes" id="valor-2">R$ 10,00</td>
+                    <td class="icon"><i class="fa-solid fa-circle-info" style="color: #c4c4c4;"></i></td>
+                </tr>           
+               </tbody>
+            </table>
+        </section>
+        <section class="container">
+            <form name="lucro" class="form-inline" id="lucro" method="get" action=".">
+                <input type="text" name="form-item" id="form-item" placeholder="insira um item">
+                <input type="number" name="form-valor" id="form-valor" placeholder="Insira o valor gasto no mês">
+                <button type="submit" class="btn-adicionar">Adicionar Lucro</button>
+            </form>
+        </section>
 </body>
 </html>
