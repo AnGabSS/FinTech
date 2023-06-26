@@ -15,7 +15,7 @@ header{
     padding-bottom: 0.5em;
     padding-top: 0.9em;
     padding-left: 0.5em;
-    background-color: rgb(209, 209, 209);
+    background-color: var(--color--gray);
     display: flex;
     flex-direction: row;
 }
@@ -41,7 +41,7 @@ header{
 
 .btn-ini{
     font-weight: bold;
-    background-color: rgba(128, 128, 128, 0.322);
+    background-color: var(--color--gray);
     border-radius: 30px;
     color: rgb(49, 49, 49);
     text-align: center;
