@@ -12,7 +12,7 @@ public class Movimentacao {
 	String nome;
 	
 	//Cria uma variavel para armazena o valor dele
-	static double valor;
+	double valor;
 	
 	//Cria uma variavel para armazenar a descrição
 	String descricao;
@@ -28,7 +28,7 @@ public class Movimentacao {
 	
 	
 	public void setValor(double valor) {
-		Movimentacao.valor = valor;
+		this.valor = valor;
 	}
 	public double getValor() {
 		return valor;

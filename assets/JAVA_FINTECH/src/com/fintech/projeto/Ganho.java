@@ -25,8 +25,8 @@ public class Ganho extends Movimentacao {
 	}
 	
 	//Declaração da operação para adicionar ganho ao saldo total
-	public double addGanhoSaldo() {
-		Usuario.saldo = Usuario.saldo + Ganho.valor;
-		return Usuario.saldo;
+	public double addGanhoSaldo(Usuario usuario) {
+		usuario.saldo = usuario.saldo + this.valor;
+		return usuario.saldo;
 	}
 }

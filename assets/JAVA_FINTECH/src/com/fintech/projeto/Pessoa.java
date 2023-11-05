@@ -1,5 +1,7 @@
 package com.fintech.projeto;
 
+import java.util.Date;
+
 /**
  * Classe que abstrai uma pessoa no finTech
  * @author Angelo Gabriel Souza Santana
@@ -19,10 +21,10 @@ public class Pessoa {
 	String dtNascimento;
 	
 	//Cria uma variavel para sexo do usuario
-	char sexo;
+	String sexo;
 	
 	//Cria uma variavel para saldo do usuario
-	public static double saldo;
+	public double saldo;
 
 	
 	//Declaração dos métodos construtores
@@ -30,7 +32,7 @@ public class Pessoa {
 		
 	}
 	
-	public Pessoa(String nome, String CPF, String dtNascimento, char sexo, double saldo) {
+	public Pessoa(String nome, String CPF, String dtNascimento, String sexo, double saldo) {
 		this.setNome(nome);
 		this.setCPF(CPF);
 		this.setDtNascimento(dtNascimento);
@@ -62,12 +64,12 @@ public class Pessoa {
 	
 	
 	
-	public char getSexo() {
+	public String getSexo() {
 		return sexo;
 	}
 
-	protected void setSexo(char sexo) {
-		this.sexo = sexo;
+	protected void setSexo(String string) {
+		this.sexo = string;
 		
 	}
 

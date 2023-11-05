@@ -1,14 +1,15 @@
 package com.fintech.projeto;
 
+
 public class Usuario extends Pessoa {
 	
-	static double saldo;
+	double saldo;
 	
 	public Usuario() {
 		
 	}
 	
-	public Usuario(String nome, String CPF, String dtNascimento, char sexo, double saldo) {
+	public Usuario(String nome, String CPF, String dtNascimento, String sexo, double saldo) {
 		this.setNome(nome);
 		this.setCPF(CPF);
 		this.setDtNascimento(dtNascimento);
@@ -17,7 +18,7 @@ public class Usuario extends Pessoa {
 	}
 	
 	public void setSaldo(double saldo) {
-		Usuario.saldo = saldo;
+		this.saldo = saldo;
 	}
 	public double getSaldo() {
 		return saldo;

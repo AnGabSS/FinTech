@@ -28,8 +28,8 @@ public class Despesa extends Movimentacao {
 	
 
 	//Declaração para subtrair valor da despesa do saldo total da conta
-	public double addDespesaSaldo() {
-		Usuario.saldo = Usuario.saldo - Despesa.valor;
-		return Usuario.saldo;
+	public double addDespesaSaldo(Usuario usuario) {
+		usuario.saldo = usuario.saldo - this.valor;
+		return usuario.saldo;
 	}
 }

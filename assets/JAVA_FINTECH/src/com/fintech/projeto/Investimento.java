@@ -1,5 +1,7 @@
 package com.fintech.projeto;
 
+import java.sql.Date;
+
 /**
  * Classe que abstrai um investimento que será adicionado a conta no finTech
  * @author Angelo Gabriel Souza Santana
@@ -17,6 +19,8 @@ public class Investimento {
 	
 	//Declaração da variavel para armazenar a descrição
 	private String descricao;
+	
+	private java.sql.Date dataInsercao;
 	
 	
 	//Declaração dos métodos construtores
@@ -37,6 +41,22 @@ public class Investimento {
 	
 	//Declaração dos métodos set e get
 	
+	public Investimento(String nome, double cotas, String descricao, Date dataInsercao) {
+		this.setNome(nome);
+		this.setCotas(cotas);
+		this.setDescricao(descricao);
+		this.setDataInsercao(dataInsercao);
+	}
+
+	private void setDataInsercao(Date dataInsercao) {
+		this.dataInsercao = dataInsercao;
+		
+	}
+	
+	public java.sql.Date getDataInsercao(){
+		return dataInsercao;
+	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -60,8 +80,8 @@ public class Investimento {
 		
 	}
 	
-	public double addInvestimentoSaldo() {
-		Usuario.saldo = Usuario.saldo + (Investimento.cotas);
-		return Usuario.saldo;
+	public double addInvestimentoSaldo(Usuario usuario) {
+		usuario.saldo = usuario.saldo + (Investimento.cotas);
+		return usuario.saldo;
 	}
 }
