@@ -1,0 +1,137 @@
+* {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --bg-gray-1: rgb(40, 42, 54);
+    --bg-gray-2: rgb(33, 34, 44);
+    --bg-blue-1: rgb(13, 110, 253);
+    --bg-blue-2: rgb(1, 55, 137);
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    color: var(--bg-blue-2);
+    font-weight: 550;
+}
+
+.logo-icon {
+    color: var(--bg-blue-2);
+    margin: 5px;
+}
+
+.perfil {
+    width: 70%;
+    height: auto;
+    background-color: blue;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    border: 5px solid blue;
+    border-radius: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+    
+}
+
+.perfil h3 {
+    background-color: blue;
+    color: black;
+    margin: 30px;
+    
+}
+
+.perfil img {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.email {
+    background-color: rgb(73, 73, 214);
+    width: 40%;
+}
+
+.user{
+    font-size: 1000%;
+    color:rgb(2, 0, 2);
+}
+
+.user-id{
+    padding-top: 10%;
+    padding-inline: 20%;
+    color:rgb(239, 169, 239);
+}
+
+.user-password{
+    padding-top: 1%;
+    padding-inline: 20%;
+}
+
+
+.form-control{
+    background-color: rgba(239, 169, 239, 0.632);
+    border: none;
+}
+
+.form-control:hover{
+    background-color: rgba(255, 255, 255, 0.774);
+    border: none;
+}
+.form-control:focus{
+    background-color: rgba(235, 179, 235, 0.774);
+    border: none;
+}
+
+.input-group-text{
+    background-color: rgb(239, 169, 239);
+    border: none;
+}
+
+.form-login{
+    border: none;
+}
+
+.input-group-text{
+    width: 6vw;
+}
+
+.botao{
+    display:block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-left: 45vw;
+    margin-top: 5vh;
+}
+
+@media(max-width:1100px){
+    .botao{
+        margin-left: 40vw;
+        margin-right: 40vw;
+    }
+
+}
+
+
+.btn-ini{
+    margin-left: 0.1vw;
+    background-color: rgb(239, 169, 239);
+    width: 8vw;
+    height: 5vh;
+    min-width: 100px;
+    min-height: 40px;
+    border: none;  
+    color: black;
+}
+
+
+
+.esqueceu-senha{
+    margin-left: 0.6vw;
+}
